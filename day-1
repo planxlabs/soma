@@ -1,0 +1,11 @@
+wsl --list --online
+wsl --install -d Ubuntu-20.04
+
+sudo apt update
+sudo apt upgrade
+sudo apt purge openssh-server
+sudo apt install openssh-server
+sudo service ssh start
+sudo ss -auto
+
+sudo apt install gcc gdb
