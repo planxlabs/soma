@@ -11,7 +11,10 @@ pthread_mutex_unlock : 뮤텍스 잠금 해제
 pthread_cancel : 쓰레드 취소  
 ```
 
-## Example
+## Example (다음 코드를 동작을 분석한 후 리펙토링 하시오)
+> gcc -o thread_example thread_example.c -lpthread
+
+**therad_example.c**
 ```c
 #include <stdio.h>
 #include <string.h>
